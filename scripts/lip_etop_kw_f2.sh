@@ -1,0 +1,23 @@
+python ./exp/train.py \
+ --batch 2 \
+ --gpus 1 \
+ --resume_model /project/RDS-FEI-human_parsing-RW/etopnet/exp/run_cihp/run_13/models/kway_oshpxception-vocMay18_10-21-17_current.pth \
+ --resume_epoch 10 \
+ --lr 0.001 \
+ --numworker 5 \
+ --testInterval 10 \
+ --hidden_layers 256 \
+ --epochs 50 \
+ --dataset lip \
+ --test_classes 20 \
+ --fold 2 \
+ --way 'kway' \
+ --structure kway_oshp \
+ --size 512 \
+ --prototype_warmup 4 \
+ --fg_weight 1.0 \
+ --contrast_weight 0.0 \
+ --testing_screening True \
+ --feature_lvl mid \
+ --temperature 0.1 \
+ --validate ''

@@ -1,0 +1,24 @@
+export PYTHONPATH="${PYTHONPATH}:$(pwd)"
+python ./exp/train.py \
+ --batch 2 \
+ --gpus 1 \
+ --resume_model ./data/pretrained_model/atr_kwf1.pth \
+ --resume_epoch 39 \
+ --lr 0.001 \
+ --numworker 6 \
+ --testInterval 10 \
+ --hidden_layers 256 \
+ --epochs 50 \
+ --dataset atr \
+ --test_classes 18 \
+ --fold 1 \
+ --way 'kway' \
+ --structure kway_oshp \
+ --size 512 \
+ --prototype_warmup 25 \
+ --fg_weight 1.0 \
+ --contrast_weight 1.0 \
+ --testing_screening \
+ --feature_lvl mid \
+ --temperature 0.1 \
+ --validate
