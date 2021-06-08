@@ -11,7 +11,7 @@
 
 In the two papers, we propose a new task named **One-shot Human Parsing (OSHP)**. OSHP requires parsing humans in a query image into an open set of reference classes defined by any single reference example (i.e., a support image) during testing, no matter whether they have been annotated during training (base classes) or not (novel classes). This new task mainly aims to accommodate human parsing into a wider range of applications that seek to **parse flexible fashion/clothing classes** that are **not pre-defined in previous large-scale datasets**.
 
-![](imgs/Figure1.pdf)
+![](imgs/Figure1.jpg)
 
 [Progressive One-shot Human Parsing (AAAI 2021)](https://arxiv.org/abs/2105.01241) applies a progressive training scheme and is separated into three stages.
 
