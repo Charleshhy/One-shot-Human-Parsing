@@ -43,7 +43,7 @@ You can find the well-trained models together with the performance in the follow
 
 #### Data preparation:
 
-First, please download ATR, LIP and CIHP dataset from [source](https://drive.google.com/drive/folders/0BzvH3bSnp3E9ZW9paE9kdkJtM3M). Then, use the following commands to link the data into our project folder. Please also remember to download the
+First, please download ATR, LIP and CIHP dataset from [source](https://drive.google.com/drive/folders/0BzvH3bSnp3E9ZW9paE9kdkJtM3M). Then, use the following commands to link the data into our project folder. Please also remember to download the [atr flipped labels](https://drive.google.com/file/d/1iR8Tn69IbDSM7gq_GG-_s11HCnhPkyG3/view?usp=sharing) and [cihp flipped labels](https://drive.google.com/file/d/1aaJyQH-hlZEAsA7iH-mYeK1zLfQi8E2j/view?usp=sharing).
 
 ```
 # ATR dataset
@@ -152,25 +152,28 @@ pip install -r requirements.txt
 
 #### Training:
 
-To train our model, run:
+To train EOPNet in [End-to-end One-shot Human Parsing (journal version)](https://arxiv.org/abs/2105.01241), run:
 
 ```  bash scripts/atr
 # OSHP kway on ATR-OS fold 1
 bash scripts/atr_eop_kwf1.sh
 ```
 
-
-
 #### Validation:
 
-To evaluate our model, run:
+To evaluate EOPNet in [End-to-end One-shot Human Parsing (journal version)](https://arxiv.org/abs/2105.01241), run:
 
 ```  bash scripts/atr
 # OSHP kway on ATR-OS fold 1
 bash scripts/evaluate_atr_eop_kwf1.sh
 ```
 
+------
 
+#### TODO:
+
+- [ ] Release training/validation code for POPNet
+- [ ] Release well-trained EOPNet 1-way models
 
 #### Citation:
 
@@ -192,3 +195,6 @@ year={2021}
 }
 ```
 
+#### Acknowledgement:
+
+This repository is mainly developed basing on [Graphonomy](https://github.com/Gaoyiminggithub/Graphonomy) and [Grapy-ML](https://github.com/Charleshhy/One-shot-Human-Parsing).
