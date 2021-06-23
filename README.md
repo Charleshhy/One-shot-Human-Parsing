@@ -165,7 +165,7 @@ To evaluate EOPNet in [End-to-end One-shot Human Parsing (journal version)](http
 
 ```  bash scripts/atr
 # OSHP kway on ATR-OS fold 1
-bash scripts/evaluate_atr_eop_kwf1.sh
+bash scripts/evaluate_atr_kwf1.sh
 ```
 
 ------
