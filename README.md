@@ -3,7 +3,7 @@
 **This is the official repository for our two papers:** 
 
 - [Progressive One-shot Human Parsing (AAAI 2021)](https://arxiv.org/abs/2012.11810)
-- [End-to-end One-shot Human Parsing (journal version)](https://arxiv.org/abs/2105.01241)
+- [End-to-end One-shot Human Parsing (TPAMI 2023)](https://arxiv.org/abs/2105.01241)
 
 ***
 
@@ -13,29 +13,21 @@ In the two papers, we propose a new task named **One-shot Human Parsing (OSHP)**
 
 ![](imgs/Figure1.jpg)
 
-[Progressive One-shot Human Parsing (AAAI 2021)](https://arxiv.org/abs/2105.01241) applies a progressive training scheme and is separated into three stages.
+[Progressive One-shot Human Parsing (AAAI 2021)](https://arxiv.org/abs/2105.01241) introduces the new tasks and applies a progressive training scheme and is separated into three stages.
 
-[End-to-end One-shot Human Parsing (journal version)](https://arxiv.org/abs/2105.01241) is a one-stage end-to-end training method, which has higher performance and FPS.
+[End-to-end One-shot Human Parsing (TPAMI 2023)](https://arxiv.org/abs/2105.01241) describes a one-stage end-to-end training method with high performance and FPS. It also provides a complete task description and more baseline methods.
 
 ***
 
 ### Main results:
 
-You can find the well-trained models together with the performance in the following table.
+You can find the well-trained k-way models together with the performance in the following table.
 
 | EOPNet     |                       ATR-OS, Kway F1                        | ATR-OS, Kway Fold F2 | LIP-OS, Kway F1                                              | LIP-OS, Kway F2                                              | CIHP-OS, Kway F1                                             | CIHP-OS Kway F2                                              |
 | :--------- | :----------------------------------------------------------: | :------------------: | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Novel mIoU |                             31.1                             |         34.6         | 25.7                                                         | 30.4                                                         | 20.5                                                         | 25.1                                                         |
 | Human mIoU |                             61.9                             |         63.3         | 43.0                                                         | 45.7                                                         | 49.1                                                         | 45.5                                                         |
 | Model      | [Model](https://drive.google.com/drive/folders/1qn-dyxmpn6F7FmPrtVl2duDPTtSUjEWF?usp=sharing) |     Coming Soon      | [Model](https://drive.google.com/drive/folders/1qn-dyxmpn6F7FmPrtVl2duDPTtSUjEWF?usp=sharing) | [Model](https://drive.google.com/drive/folders/1qn-dyxmpn6F7FmPrtVl2duDPTtSUjEWF?usp=sharing) | [Model](https://drive.google.com/drive/folders/1qn-dyxmpn6F7FmPrtVl2duDPTtSUjEWF?usp=sharing) | [Model](https://drive.google.com/drive/folders/1qn-dyxmpn6F7FmPrtVl2duDPTtSUjEWF?usp=sharing) |
-
-You can find the well-trained models together with the performance in the following table.
-
-|   EOPNet   | ATR-OS, 1way F1 | ATR-OS, 1way F2 | LIP-OS, 1way F1 | LIP-OS, 1way F2 | CIHP-OS, 1way F1 | CIHP-OS 1way F2 |
-| :--------: | :-------------: | :-------------: | --------------- | --------------- | ---------------- | --------------- |
-| Novel mIoU |      53.0       |      41.4       | 42.0            | 46.2            | 25.4             | 36.4            |
-| Human mIoU |      68.2       |      69.5       | 57.0            | 58.0            | 53.8             | 55.4            |
-|   Model    |   Coming Soon   |                 |                 |                 |                  |                 |
 
 ****
 
@@ -165,15 +157,12 @@ To evaluate EOPNet in [End-to-end One-shot Human Parsing (journal version)](http
 
 ```  bash scripts/atr
 # OSHP kway on ATR-OS fold 1
-bash scripts/evaluate_atr_kwf1.sh
+bash scripts/evaluate_atr_eop_kwf1.sh
 ```
 
 ------
 
-#### TODO:
 
-- [ ] Release training/validation code for POPNet
-- [ ] Release well-trained EOPNet 1-way models
 
 #### Citation:
 
