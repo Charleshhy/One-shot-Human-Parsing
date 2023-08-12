@@ -166,7 +166,7 @@ bash scripts/evaluate_atr_eop_kwf1.sh
 
 #### Citation:
 
-If you find our papers or this repository useful, please consider cite our papers:
+If you find our papers or this repository helpful, please consider citing our papers:
 
 ```
 @inproceedings{he2021progressive,
@@ -176,14 +176,14 @@ booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
 year={2021}
 }
 
-@article{he2021end,
+@article{he2023end,
 title={End-to-end One-shot Human Parsing},
 author={He, Haoyu and Zhang, Jing and Zhuang, Bohan and Cai, Jianfei and Tao, Dacheng},
-journal={arXiv preprint arXiv:2105.01241},
-year={2021}
+journal={TPAMI},
+year={2023}
 }
 ```
 
 #### Acknowledgement:
 
-This repository is mainly developed basing on [Graphonomy](https://github.com/Gaoyiminggithub/Graphonomy) and [Grapy-ML](https://github.com/Charleshhy/One-shot-Human-Parsing).
+This repository is mainly developed based on [Graphonomy](https://github.com/Gaoyiminggithub/Graphonomy) and [Grapy-ML](https://github.com/Charleshhy/One-shot-Human-Parsing).
